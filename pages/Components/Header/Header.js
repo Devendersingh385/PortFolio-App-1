@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import Navbar from './Navbar';
 import SearchInput from './SearchInput';
 import Cart from './Cart';
+import SocialLink from './SocialLink';
 
 const Header = () => {
   return (
@@ -35,6 +36,9 @@ const Header = () => {
                             </li>
                             <li>
                                 <Cart />
+                            </li>
+                            <li>                                
+                                <SocialLink />
                             </li>
                         </ul> 
                     </Grid>                                       
