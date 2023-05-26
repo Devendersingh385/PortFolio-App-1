@@ -1,11 +1,11 @@
-import React from 'react'
-import Technologies from './Technologies'
+import React from 'react';
+import ServiceList from './ServiceList';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 
-const Skills = ({title}) => {
+const Services = ({title}) => {
   return (
     <>
         <Box 
@@ -30,13 +30,13 @@ const Skills = ({title}) => {
         </Box>                
         </Grid>                
         <Grid 
-          container spacing={2} >                                                                       
-              <Technologies />                        
+          container spacing={{ xs: 2, md: 3 }}>                                                                       
+              <ServiceList />                        
         </Grid>                
         </Container>
-        </Box>         
+        </Box>   
     </>
   )
 }
 
-export default Skills
+export default Services
