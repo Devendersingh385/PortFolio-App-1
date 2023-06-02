@@ -30,7 +30,7 @@ const Skills = ({title}) => {
         </Box>                
         </Grid>                
         <Grid 
-          container spacing={2} >                                                                       
+          container spacing={4} >                                                                       
               <Technologies />                        
         </Grid>                
         </Container>

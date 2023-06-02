@@ -21,6 +21,8 @@ const Navbar = () => {
             <Typography variant="smallText"><Link href="#" underline="none" color='dark'>Blog</Link></Typography>
             <Typography variant="smallText"><Link href="#" underline="none" color='dark'>Contact</Link></Typography>
             <Typography variant="smallText"><Link href="#" underline="none" color='dark'>Products</Link></Typography>
+            <Typography variant="smallText"><Link href="/login" underline="none" color='dark'>Login</Link></Typography>
+            <Typography variant="smallText"><Link href="#" underline="none" color='dark'>Signup</Link></Typography>
         </ThemeProvider>
         </>
   )

@@ -30,7 +30,7 @@ const Services = ({title}) => {
         </Box>                
         </Grid>                
         <Grid 
-          container spacing={{ xs: 2, md: 3 }}>                                                                       
+          container spacing={{ xs: 4, md: 4 }}>                                                                       
               <ServiceList />                        
         </Grid>                
         </Container>

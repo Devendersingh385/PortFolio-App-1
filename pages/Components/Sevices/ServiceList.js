@@ -15,22 +15,46 @@ const ServiceList = () => {
                     // eslint-disable-next-line react/jsx-key
                     <Grid item xs={4}>
                         <Box  key={services.id} sx={{
-                            width: '100%'
+                            width: '100%',
+                            height: '100%',
                         }}>    
-                            <Card sx={{  }}> 
-                            
-                            <CardContent>
-                            <div width={45} height={45}>{services.icon}</div>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    {services.title}
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    {services.description}
-                                </Typography>
-                            </CardContent>                            
+                            <Card 
+                                sx={{ 
+                                    border: '0px',
+                                    boxShadow:'2px 4px 12px rgba(0,0,0,.08)',
+                                    borderRadius: '10px' ,
+                                    height: '100%'                                  
+                                }}> 
+                                
+                                <CardContent>
+                                <div 
+                                width={60} 
+                                height={60}
+                                className='mb-6'
+                                >
+                                    {services.icon}
+                                </div>
+                                    <Typography 
+                                        gutterBottom 
+                                        variant="h5" 
+                                        component="div"
+                                        sx={{
+                                            fontSize: '22px',
+                                            fontWeight: '700',
+                                            fontFamily: 'SF Pro Display'
+                                        }}
+                                        >
+                                        {services.title}
+                                    </Typography>
+                                    <Typography 
+                                    variant="body2" 
+                                    color="text.secondary">
+                                        {services.description}
+                                    </Typography>
+                                </CardContent>                            
                             </Card>         
                         </Box>
-                        </Grid>
+                    </Grid>
                     
                     )
             }
