@@ -72,6 +72,7 @@ const Login = () => {
                     <Grid item xs={6}>
                         <Card sx={{ minWidth: 396,
                         padding: '32px',
+                        boxShadow:'0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1)'
                     }}>
                         <Typography 
                             variant="h5" 
@@ -81,7 +82,9 @@ const Login = () => {
                             >
                             Log in to Facebook
                         </Typography>
-                        <Box >
+                        <Box
+                            className='mb-4'
+                        >
                         <TextField 
                         label="Email address or phone number" 
                         variant="outlined"
@@ -92,7 +95,9 @@ const Login = () => {
                         onChange={getData}
                         />
                         </Box>
-                        <Box>
+                        <Box
+                            className='mb-4'
+                        >
                         <TextField 
                         label="Password" 
                         variant="outlined"
@@ -103,7 +108,9 @@ const Login = () => {
                         onChange={getData}
                         />
                         </Box>
-                        <Box>
+                        <Box
+                            className='mb-4'
+                        >
                         <Button 
                         variant="contained" 
                         color="success" 

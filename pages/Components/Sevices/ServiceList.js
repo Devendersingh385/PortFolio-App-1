@@ -13,7 +13,7 @@ const ServiceList = () => {
             {
                 getServices.map(services => 
                     // eslint-disable-next-line react/jsx-key
-                    <Grid item xs={4}>
+                    <Grid item xs={12} lg={6}>
                         <Box  key={services.id} sx={{
                             width: '100%',
                             height: '100%',

@@ -9,6 +9,7 @@ const AboutMedia = () => {
             alt=''
             width={500}
             height={300}
+            className='rounded-xl'
         />
     </>
   )

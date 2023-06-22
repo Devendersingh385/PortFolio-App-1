@@ -26,17 +26,19 @@ const Header = () => {
                                     </svg>
                                 </Link>
                             </li>
+                            <li>
                             <Box sx={{
                                 display: 'contents'
                             }}>
                                 <Navbar />
                             </Box>
-                            <li>
+                            </li>
+                            {/* <li>
                                 <SearchInput />
                             </li>
                             <li>
                                 <Cart />
-                            </li>
+                            </li> */}
                             <li>                                
                                 <SocialLink />
                             </li>
