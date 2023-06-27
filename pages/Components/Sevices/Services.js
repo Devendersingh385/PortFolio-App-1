@@ -18,19 +18,20 @@ const Services = ({title}) => {
           className='justify-center mb-6'
           > 
         <Box
-          className='text-center justify-center'
+          className='text-center justify-center mb-5'
         >            
             <Typography 
-            variant="h3"
+            variant="h2"
             sx={{
-              fontWeight: '500',
+              fontSize: '42px',
+              fontWeight: '700',
               fontFamily: 'SF Pro Display'
             }}
             >{title}</Typography>
         </Box>                
         </Grid>                
         <Grid 
-          container spacing={{ xs: 4, md: 4 }}>                                                                       
+          container spacing={{ xs: 4, md: 4, lg: 5 }}>                                                                       
               <ServiceList />                        
         </Grid>                
         </Container>

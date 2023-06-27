@@ -9,7 +9,10 @@ const Skills = ({title}) => {
   return (
     <>
         <Box 
-          sx={{ flexGrow: 1 }} 
+          sx={{ 
+            flexGrow: 1,
+            background: 'rgb(242, 240, 255)'
+          }} 
           className="py-16">
         <Container 
           maxWidth="lg">
@@ -18,19 +21,20 @@ const Skills = ({title}) => {
           className='justify-center mb-6'
           > 
         <Box
-          className='text-center justify-center'
+          className='text-center justify-center mb-5'
         >            
             <Typography 
-            variant="h3"
+            variant="h2"
             sx={{
-              fontWeight: '500',
+              fontSize: '42px',
+              fontWeight: '700',
               fontFamily: 'SF Pro Display'
-            }}
+            }}            
             >{title}</Typography>
         </Box>                
         </Grid>                
         <Grid 
-          container spacing={4} >                                                                       
+          container spacing={5} >                                                                       
               <Technologies />                        
         </Grid>                
         </Container>

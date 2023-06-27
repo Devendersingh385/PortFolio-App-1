@@ -7,17 +7,18 @@ import { getTechnoloies } from './TechnoList';
 import Image from 'next/image';
 
 const cardStyle = {
-  boxShadow:'2px 4px 12px rgba(0,0,0,.08)',
+  boxShadow:'0px 8px 24px #F2F0FF',
   transition: 'all .3s cubic-bezier(0,0,.5,1)',
   minHeight: '84px',
   border: '0px',
+  background: '#fff',
   "& img": {
     // filter:'grayscale(100%)'
   },
   "& .MuiCardHeader-title": {
     fontSize: '22px',
-    fontWeight: '700',
-    fontFamily: 'SF Pro Display'
+    fontWeight: '500',
+    fontFamily: 'Poppins'
   },
   "&:hover":{
     boxShadow:'2px 4px 16px rgba(0,0,0,.16)',

@@ -7,32 +7,45 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-const ServiceList = () => {
+const cardStyle = {
+    border: '0px',
+    boxShadow:'0px 8px 24px #F2F0FF',
+    borderRadius: '10px' ,
+    height: '100%',
+    padding: '32px', 
+    transition: 'all .3s cubic-bezier(0,0,.5,1)',
+    background: '#fff',
+    "&:hover":{
+      boxShadow:'2px 4px 16px rgba(0,0,0,.16)',
+      transform: 'scale3d(1.01,1.01,1.01)',
+    },
+  };
+
+const ServiceList = () => {    
   return (
     <>       
             {
                 getServices.map(services => 
                     // eslint-disable-next-line react/jsx-key
-                    <Grid item xs={12} lg={6}>
+                    <Grid item xs={12} lg={4}>
                         <Box  key={services.id} sx={{
                             width: '100%',
                             height: '100%',
                         }}>    
                             <Card 
-                                sx={{ 
-                                    border: '0px',
-                                    boxShadow:'2px 4px 12px rgba(0,0,0,.08)',
-                                    borderRadius: '10px' ,
-                                    height: '100%'                                  
-                                }}> 
+                                sx={ cardStyle }> 
                                 
-                                <CardContent>
+                                <CardContent 
+                                 sx={{
+                                    padding: 0,
+                                 }}
+                                >
                                 <div 
                                 width={60} 
                                 height={60}
                                 className='mb-6'
                                 >
-                                    {services.icon}
+                                 {services.icon}
                                 </div>
                                     <Typography 
                                         gutterBottom 
@@ -41,7 +54,7 @@ const ServiceList = () => {
                                         sx={{
                                             fontSize: '22px',
                                             fontWeight: '700',
-                                            fontFamily: 'SF Pro Display'
+                                            fontFamily: 'poppins'
                                         }}
                                         >
                                         {services.title}

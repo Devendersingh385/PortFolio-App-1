@@ -1,14 +1,14 @@
 import React from 'react';
-import WorkList from './WorkList';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
+import ContactForm from './ContactForm';
 
-const MyWork = ({title}) => {
+const Contact = ({ title }) => {
   return (
     <>
-    <Box 
+       <Box 
           sx={{ flexGrow: 1 }} 
           className="py-16">
         <Container 
@@ -31,17 +31,14 @@ const MyWork = ({title}) => {
         </Box>                
         </Grid>                
         <Grid 
-          container spacing={{ xs: 4, md: 4, lg: 5 }}
-          sx={{
-            marginTop: '0 !important',
-          }}
-          >                                                                       
-              <WorkList />                   
+          container spacing={{ xs: 4, md: 4, lg: 5 }}>                                                                       
+                 <ContactForm />                   
         </Grid>                
         </Container>
-        </Box>  
+        </Box>      
+    
     </>
   )
 }
 
-export default MyWork
+export default Contact
