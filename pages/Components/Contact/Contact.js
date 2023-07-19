@@ -4,12 +4,14 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import ContactForm from './ContactForm';
+import BasicForm from './BasicForm';
+
 
 const Contact = ({ title }) => {
   return (
     <>
        <Box 
-          sx={{ flexGrow: 1 }} 
+          sx={{ flexGrow: 1, background: 'rgb(247, 249, 252)' }} 
           className="py-16">
         <Container 
           maxWidth="lg">
@@ -32,7 +34,7 @@ const Contact = ({ title }) => {
         </Grid>                
         <Grid 
           container spacing={{ xs: 4, md: 4, lg: 5 }}>                                                                       
-                 <ContactForm />                   
+                 <ContactForm />              
         </Grid>                
         </Container>
         </Box>      

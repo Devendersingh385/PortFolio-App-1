@@ -11,7 +11,7 @@ const Skills = ({title}) => {
         <Box 
           sx={{ 
             flexGrow: 1,
-            background: 'rgb(242, 240, 255)'
+            background: 'rgb(247, 249, 252)'
           }} 
           className="py-16">
         <Container 

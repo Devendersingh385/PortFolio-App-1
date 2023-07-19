@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import ProductList from './productList';
+import ProductCategory from './Components/Products/ProductCategory';
 
 const Products = ({title}) => {
   return (
@@ -28,11 +29,24 @@ const Products = ({title}) => {
             }}
             >{title}</Typography>
         </Box>                
-        </Grid>                
-        <Grid 
-          container spacing={{ xs: 4, md: 4 }}>                                                                       
-              <ProductList />                  
-        </Grid>                
+        </Grid>        
+        </Container>
+        </Box>   
+        <Box 
+          sx={{ flexGrow: 1 }} 
+          className="py-16">
+        <Container 
+          maxWidth="lg">
+          <Grid container spacing={5}>
+            <Grid xs={3}>
+              <ProductCategory />
+            </Grid>
+            <Grid xs={9}>
+              <Grid    container spacing={{ xs: 4, md: 4 }}>                                                                       
+                    <ProductList />                  
+              </Grid> 
+            </Grid>                      
+          </Grid>        
         </Container>
         </Box>   
     </>

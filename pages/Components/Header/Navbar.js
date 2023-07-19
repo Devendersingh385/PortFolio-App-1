@@ -21,7 +21,7 @@ const Navbar = () => {
             <Typography variant="smallText" className='px-3'><Link href="#" underline="none" color='dark'>About</Link></Typography>
             <Typography variant="smallText" className='px-3'><Link href="#" underline="none" color='dark'>Blog</Link></Typography>
             <Typography variant="smallText" className='px-3'><Link href="#" underline="none" color='dark'>Contact</Link></Typography>
-            <Typography variant="smallText" className='px-3'><Link href="/productsList" underline="none" color='dark'>Products</Link></Typography>
+            <Typography variant="smallText" className='px-3'><Link href="/products" underline="none" color='dark'>Products</Link></Typography>
             <Typography variant="smallText" className='px-3'><Link href="/login" underline="none" color='dark'>Login</Link></Typography>
             <Typography variant="smallText" className='px-3'><Link href="/signup" underline="none" color='dark'>Signup</Link></Typography>
         </ThemeProvider>

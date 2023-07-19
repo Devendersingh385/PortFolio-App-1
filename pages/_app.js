@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import '@/styles/header.css'
 import '@fontsource/poppins';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';

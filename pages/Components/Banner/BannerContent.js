@@ -25,8 +25,7 @@ const BannerContent = () => {
                             fontWeight: '500',
                             marginBottom: '20px' 
                            }}>I’m Joe Biden <br className='hidden lg:block'/> <span style={{color: '#6e6e73'}}>Front-End Software Engineer</span></Typography>
-
-                           <Buttons title='Download CV' />
+                             
                         </Box> 
                     </Grid>
                     <Grid item xs={12} lg={6} order={{ xs: 1, lg: 2 }}>
